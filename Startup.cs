@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using hello_uship.Configuration;
 
 namespace hello_uship
 {
@@ -27,6 +28,10 @@ namespace hello_uship
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<ApplicationConfigurations>(
+                Configuration.GetSection("ApplicationConfigurations")
+            );
+
             // Add framework services.
             services.AddMvc();
         }

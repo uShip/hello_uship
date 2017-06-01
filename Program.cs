@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace hello_uship
 {
@@ -11,8 +12,14 @@ namespace hello_uship
     {
         public static void Main(string[] args)
         {
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Environment.GetEnvironmentVariable("HAB_CONFIG_PATH") ?? Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: false)
+                .Build();
+
             var host = new WebHostBuilder()
                 .UseKestrel()
+                .UseConfiguration(config)
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
