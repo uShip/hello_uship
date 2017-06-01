@@ -1,8 +1,0 @@
-/Users/emachnic/Work/hello_uship/bin/Debug/netcoreapp1.1/hello_uship.deps.json
-/Users/emachnic/Work/hello_uship/bin/Debug/netcoreapp1.1/hello_uship.runtimeconfig.json
-/Users/emachnic/Work/hello_uship/bin/Debug/netcoreapp1.1/hello_uship.runtimeconfig.dev.json
-/Users/emachnic/Work/hello_uship/bin/Debug/netcoreapp1.1/hello_uship.dll
-/Users/emachnic/Work/hello_uship/bin/Debug/netcoreapp1.1/hello_uship.pdb
-/Users/emachnic/Work/hello_uship/obj/Debug/netcoreapp1.1/hello_uship.AssemblyInfo.cs
-/Users/emachnic/Work/hello_uship/obj/Debug/netcoreapp1.1/hello_uship.dll
-/Users/emachnic/Work/hello_uship/obj/Debug/netcoreapp1.1/hello_uship.pdb
