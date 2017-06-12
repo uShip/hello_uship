@@ -14,7 +14,7 @@ pkg_origin=emachnic
 
 # Required.
 # Sets the version of the package.
-pkg_version="0.1.0"
+pkg_version="0.1.3"
 
 # Optional.
 # The name and email address of the package maintainer.
